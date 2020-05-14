@@ -1,0 +1,8 @@
+{
+  "domain": "airx",
+  "name": "airx",
+  "documentation": "https://github.com/kylinfedora/ha-airx",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": []
+}
