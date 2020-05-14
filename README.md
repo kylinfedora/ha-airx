@@ -9,12 +9,18 @@ homeassistant:
   packages: !include_dir_named packages
 ```
 
-
-
-
 需要自己根据自己的情况修改airx.yaml和secrets.yaml
 获取自己的token、userid、deviceid办法
 https://bbs.hassbian.com/thread-2113-1-1.html
+
+登录并获取token
+
+`curl -d "password=xxxx&account=13488888888&" 'http://luxcar.com.cn/airx/airx_iot_account/web/login'`
+
+判断是否登录
+`curl -d "token=airxtkf1b2669d341449b1842&user_id=12345&" 'http://luxcar.com.cn/airx/airx_iot_account/web/isLogin'`
+
+token为前面登录的时候获取的，不重新登录不会改变,userId为登录时候返回的
 
 ```yaml
 airx_token: 0000000000000
